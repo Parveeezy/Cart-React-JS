@@ -5,12 +5,12 @@ class Cart extends React.Component {
 
     getGoodsFromArr = (art) => {
         for (let i = 0; i < this.props.goods.length; i++) {
-            if (art === this.props.goods[i]['articul']) {
+            if (art === this.props.goods[i]['article']) {
                 return this.props.goods[i];
             }
         }
     }
-    
+
     renderObj = () => {
         let out = [];
         for (let key in this.props.cart) {

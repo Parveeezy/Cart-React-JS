@@ -38,7 +38,7 @@ class App extends React.Component {
         <h1>Cart</h1>
         <div className="goods-field" onClick={this.addToCart}>
           {goodsArr.map(item => <Goods title={item.title} cost={item.cost} image={item.image}
-            articul={item.articul} key={item.articul} />)}
+            article={item.article} key={item.article} />)}
         </div>
         {showCart}
 
